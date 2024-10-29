@@ -2,7 +2,7 @@
 FROM gcc:latest
 
 # Install OpenSSL library
-RUN apt-get update && apt-get install -y libssl-dev hexdump
+RUN apt-get update && apt-get install -y libssl-dev bsdmainutils
 
 # Set the working directory inside the container
 WORKDIR /app
