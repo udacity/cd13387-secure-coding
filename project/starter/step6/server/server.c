@@ -8,6 +8,7 @@
 
 #define PORT 8443
 #define BUFFER_SIZE 4096
+#define SOFTWARE_FILE "software_update.bin"
 
 void initialize_openssl() {
     SSL_load_error_strings();
@@ -44,7 +45,7 @@ void configure_context(SSL_CTX *ctx) {
 }
 
 void handle_client(SSL *ssl) {
-    FILE *file = fopen("software_update.bin", "rb");
+    FILE *file = fopen(SOFTWARE_FILE, "rb");
     if (!file) {
         perror("Unable to open file");
         return;
