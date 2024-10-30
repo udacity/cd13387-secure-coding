@@ -21,8 +21,6 @@ RUN echo "ALL: ALL" >> /etc/hosts.allow && \
     echo "ALL: ALL" >> /etc/hosts.deny
 
 
-#Expose ports
-EXPOSE 21,23,513
 
 # Configure xinetd to start services
 COPY xinetd.conf /etc/xinetd.conf
