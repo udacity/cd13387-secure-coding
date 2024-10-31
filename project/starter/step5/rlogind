@@ -6,4 +6,5 @@ service login
     user = root
     server = /usr/sbin/in.rlogind
     log_on_failure += USERID
+    bind = 127.0.0.1
 }

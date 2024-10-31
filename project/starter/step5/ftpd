@@ -4,6 +4,7 @@ service ftp
     socket_type = stream
     wait = no
     user = root
-    server = /usr/sbin/in.ftpd
+    server = /usr/sbin/proftpd
     log_on_failure += USERID
+    bind = 127.0.0.1
 }

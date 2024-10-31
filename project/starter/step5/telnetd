@@ -6,4 +6,5 @@ service telnet
     user = root
     server = /usr/sbin/telnetd
     log_on_failure += USERID
+    bind = 127.0.0.1
 }
