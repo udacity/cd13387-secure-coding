@@ -1,3 +1,2 @@
 user:password
 admin:s3CretP4ssword
-superuser:h4rdc0d3d
